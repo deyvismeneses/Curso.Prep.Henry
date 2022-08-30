@@ -17,7 +17,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 }
 
 
-#EjercicioTres {
+#ejercicioTres {
     position: absolute;
     top: 102px;
     left: 201px;
@@ -47,7 +47,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 #ejercicioSiete{
     display: flex;
     align-items: center;
-    align-content: ;
+    align-content: space-between;
     justify-content: space-evenly;
     flex-direction: column-reverse;
 
