@@ -4,7 +4,7 @@
 const nuevaString = '{</>}';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 13;
+const nuevoNum = 10;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -13,7 +13,7 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4   === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -70,8 +70,6 @@ if (x === y){
 } else{
   return false
 }
-
-
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -128,7 +126,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 0){
+  if (num % 2 === 1){
     return true
   } else{
     return false
@@ -139,38 +137,42 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-
+const nuevoNum = Math.pow(num, 2);
+return nuevoNum;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  const resultado = Math.pow(num, 3)
+  return resultado
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  const resultado = Math.pow(num, exponent)
+  return resultado
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  const resultado = Math.round(num)
+  return resultado
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  return Math.ceil(num)
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var resultado = Math.randon();
-  return resultado;
+  const resultado = Math.random()
+  return resultado
 }
 
 function esPositivo(numero) {
@@ -178,25 +180,27 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  //if(numero > 0){
-    //return 'Es positivo';
-  //} else if (numero < 0)
-    //return 'Es negativo';
-  //} else {
-    //return false;
+  if (numero > 0) {
+      return 'Es positivo'
+  }   else if (numero < 0){ 
+      return 'Es negativo'
+  }   else {
+      return false;
+  }
   }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+    return str + '!'
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+    return nombre + ' ' + apellido
 }
 
 function obtenerSaludo(nombre) {
